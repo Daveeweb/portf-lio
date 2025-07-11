@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+
+  <title>Portfólio</title>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav>
+    <div class="left">
+      <a href="/">Davi</a>
+    </div>
+
+    <div class="right">
+      <a href="http://github.com" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-github"></i>
+        <span>Github</span>
+      </a>
+
+      <a href="http://linkedin.com" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-linkedin"></i>
+        <span>Linkedin</span>
+      </a>
+
+      <a href="mailto: davi@example.com">
+        <i class="fa-solid fa-envelope"></i>
+        <span>Email</span>
+      </a>
+    </div>
+  </nav>
+
+  <main>
+    <!-- SECTION 1: Hero -->
+    <section class="hero-section">
+      <div class="text">
+        <h2>Olá, eu sou o Davi 👋</h2>
+        <p>
+          Sou um desenvolvedor apaixonado por criar experiências digitais incríveis. Com foco em design moderno e usabilidade, busco entregar projetos de alta qualidade que conectem pessoas e tecnologia.
+        </p>
+
+        <div class="links">
+          <a href="#skills">
+            <i class="fa-solid fa-code"></i>
+            <span>Habilidades</span>
+          </a>
+
+          <a href="#projects">
+            <i class="fa-solid fa-folder-open"></i>
+            <span>Projetos</span>
+          </a>
+
+          <!-- <a href="#testimony">
+            <i class="fa-solid fa-pen"></i>
+            <span>Depoimentos</span>
+          </a> -->
+
+          <a href="#contact">
+            <i class="fa-solid fa-envelope"></i>
+            <span>Contato</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="headshot">
+        <img src="images/davi.webp" alt="Foto de Davi" />
+      </div>
+    </section>
+
+    <!-- SECTION 2: Skills -->
+    <section id="skills" class="skills-section">
+      <h2>Habilidades</h2>
+      <div class="text">
+        Tenho experiência em diversas tecnologias modernas para desenvolvimento web, sempre buscando aprimorar minhas habilidades e aplicar as melhores práticas no dia a dia.
+      </div>
+
+      <div class="cells">
+        <div class="cell">
+          <img src="images/html-logo.webp" alt="logo HTML" />
+          <span>HTML</span>
+        </div>
+
+        <div class="cell">
+          <img src="images/css-logo.webp" alt="logo CSS" />
+          <span>CSS</span>
+        </div>
+
+        <div class="cell">
+          <img src="images/javascript-logo.webp" alt="logo JavaScript" />
+          <span>JavaScript</span>
+        </div>
+
+        <div class="cell">
+          <img src="images/node-logo.webp" alt="logo Node.js" />
+          <span>Node.js</span>
+        </div>
+
+        <div class="cell">
+          <img src="images/react-logo.webp" alt="logo React.js" />
+          <span>React.js</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: Projetos -->
+    <section id="projects" class="projects-section">
+      <h2>Projetos</h2>
+      <div class="projects">
+        <!-- Projeto 1 -->
+        <div class="project-card">
+          <h3>Site de Games</h3>
+          <video controls>
+            <source src="videos/project1.mp4" type="video/mp4" />
+            Seu navegador não suporta vídeos HTML5.
+          </video>
+          <p>
+            Layout moderno e responsivo focado no universo de games, com cartões interativos, efeitos visuais dinâmicos ao passar o mouse, e integração de conteúdo multimídia para imersão total.
+          </p>
+          <p><strong>Tecnologias:</strong> HTML, CSS, JavaScript</p>
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer">Ver no GitHub</a>
+        </div>
+
+        <!-- Projeto 2 -->
+        <div class="project-card">
+          <h3>Site de Filmes</h3>
+          <video controls>
+            <source src="videos/project3.mp4" type="video/mp4" />
+            Seu navegador não suporta vídeos HTML5.
+          </video>
+          <p>
+            Site elegante e intuitivo para explorar filmes, com layout organizado em cards, transições suaves, e funcionalidade de busca para facilitar a navegação entre títulos.
+          </p>
+          <p><strong>Tecnologias:</strong> HTML, CSS, JavaScript</p>
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer">Ver no GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: Contato -->
+    <section id="contact" class="contact-section">
+      <h2>Contato</h2>
+
+      <div class="group">
+        <div class="text">
+          Se você gostou do meu trabalho ou tem alguma dúvida, não hesite em entrar em contato comigo através do formulário abaixo. Ficarei feliz em conversar sobre oportunidades e projetos.
+        </div>
+
+        <form>
+          <label for="name">Nome</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Mensagem</label>
+          <textarea id="message" name="message" cols="30" rows="10" required></textarea>
+
+          <button type="submit">Enviar Mensagem</button>
+        </form>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
